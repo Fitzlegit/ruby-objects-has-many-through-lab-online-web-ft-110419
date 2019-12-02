@@ -27,7 +27,7 @@ class Doctor
   end
 
   def patients
-    appointments.select {|p| p.patient.name}
+    appointments.select {|p| p.patient}
   end
 
 end
