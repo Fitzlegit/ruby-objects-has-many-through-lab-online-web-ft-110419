@@ -16,7 +16,8 @@ class Patient
     save
   end
 
-  def new_appointment
+  def new_appointment(doctor, date)
+    Appointment.new(date, self, doctor)
   end
 
   def appointments
