@@ -24,11 +24,10 @@ class Doctor
 
   def appointments
     Appointment.all.select{ |a| a.doctor == self }
-    binding.pry
   end
 
   def patients
-
+    appointments.select{|p| p.patient}
   end
 
 end
