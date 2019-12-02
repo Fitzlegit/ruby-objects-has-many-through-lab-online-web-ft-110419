@@ -1,3 +1,5 @@
+require 'pry'
+
 class Doctor
   attr_accessor :name
 
@@ -22,10 +24,11 @@ class Doctor
 
   def appointments
     Appointment.all.select{ |a| a.doctor == self }
+    binding.pry
   end
 
   def patients
-    appointments.map(&:patient)
+
   end
 
 end
