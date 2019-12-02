@@ -10,7 +10,7 @@ class Doctor
   def save
     @@all << self
   end
-  
+
   def iniitialize(name)
     @name = name
     save
