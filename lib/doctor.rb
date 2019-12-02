@@ -11,7 +11,7 @@ class Doctor
     @@all << self
   end
 
-  def iniitialize(name)
+  def initialize(name)
     @name = name
     save
   end
