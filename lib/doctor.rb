@@ -16,10 +16,12 @@ class Doctor
     save
   end
 
-  def new_appointment
+  def new_appointment(date, patient)
+    Apointment.new(date, patient, self )
   end
 
   def appointments
+    
   end
 
   def patients
